@@ -1,41 +1,223 @@
-```markdown
-# Quiz Competition & Management System (Java OOP + JavaFX + MySQL)
+🎓 Quiz Competition & Management System
 
-This is a full Java implementation of a Quiz Competition & Management System using:
-- Java 11+ (works with 8+ in most code paths)
-- JavaFX (no CSS, no FXML)
-- JDBC (MySQL)
-- MVC-style separation (models, DAOs, UI screens)
-- Minimalist professional UI using JavaFX nodes only
-- Student portal with plain-text passwords (per request) — WARNING: insecure for production
+A JavaFX-based desktop application developed as a lab project for
+Object Oriented Programming (CSC241) at
+COMSATS University Islamabad, Abbottabad Campus.
 
-What’s included
-- Admin portal: login, manage quizzes, questions, participants, start quiz, view results, leaderboard.
-- Student portal: register/login (email+password), list active quizzes, start quiz with timer, view attempts.
-- DAOs: AdminDAO, ParticipantDAO, QuizDAO, QuestionDAO, QuizAttemptDAO (all using PreparedStatement)
-- AppNavigator helper for safe screen switching
-- UI helper (UIUtil) for consistent minimalistic styling
-- SQL schema with sample data: db/schema.sql
+The system allows administrators to manage quizzes and questions, while students can register, log in, attempt quizzes, and view results and leaderboards. The project demonstrates core Object-Oriented Programming principles, JavaFX GUI development, and database integration using JDBC.
 
-Quick start
-1. Install JDK (11+ recommended), Maven and MySQL.
-2. Create database and tables:
-   - mysql -u root -p < db/schema.sql
-3. Edit `src/main/resources/db.properties` with your MySQL connection details.
-4. Build:
-   - mvn clean package
-5. Run:
-   - mvn javafx:run
-   - or run `com.quiz.MainApp` from your IDE.
+📌 Project Overview
 
-Notes & next steps
-- All SQL uses PreparedStatement. DAOs attempt to close resources correctly.
-- Student passwords are stored in plain text per your request. I strongly recommend switching to PBKDF2 hashing before publishing or sharing the app.
-- If you want I can:
-  - convert passwords to hashed storage,
-  - add more UI polish (icons, animations) while staying within constraints,
-  - create sample unit tests,
-  - or prepare exact git commands/patch to add these files to your repo.
+The Quiz Competition & Management System is a learning-oriented desktop application designed to automate quiz management in an academic environment.
+It provides a structured workflow for quiz creation, participation, evaluation, and result tracking.
 
-If you want the git commands to commit these into branch feature/student-portal and open a PR, tell me and I’ll provide them.
-```
+This project follows a clean architecture using:
+
+Model classes for domain entities
+
+DAO (Data Access Object) layer for database operations
+
+JavaFX UI layer for user interaction
+
+🚀 Features
+👨‍🏫 Admin
+
+Admin login
+
+Create, update, and delete quizzes
+
+Manage quiz questions
+
+View quiz results
+
+View leaderboard
+
+👨‍🎓 Student
+
+Student registration and login
+
+View available quizzes
+
+Attempt timed quizzes
+
+Automatic scoring and percentage calculation
+
+View attempt history and leaderboard
+
+🛠️ Technologies Used
+Technology	Purpose
+Java (JDK 8+)	Core programming language
+JavaFX	Graphical User Interface
+MySQL	Database
+JDBC	Database connectivity
+Git & GitHub	Version control
+🗂️ Project Structure
+src/main/java/com/quiz
+├── MainApp.java
+├── AppNavigator.java
+│
+├── model
+│   ├── Admin.java
+│   ├── Participant.java
+│   ├── Quiz.java
+│   ├── Question.java
+│   ├── QuizAttempt.java
+│   └── AttemptAnswer.java
+│
+├── dao
+│   ├── DBConnection.java
+│   ├── AdminDAO.java
+│   ├── ParticipantDAO.java
+│   ├── QuizDAO.java
+│   ├── QuestionDAO.java
+│   └── QuizAttemptDAO.java
+│
+└── ui
+    ├── UIUtil.java
+    ├── WelcomeScreen.java
+    ├── LoginScreen.java
+    ├── StudentLoginScreen.java
+    ├── DashboardScreen.java
+    ├── StudentDashboard.java
+    ├── QuizAttemptScreen.java
+    └── Other UI Screens
+
+📐 UML Diagrams
+
+All UML diagrams are available in the /uml folder.
+
+📌 Class Diagram
+
+📌 Use Case Diagram
+
+📌 Sequence Diagram
+
+🖼️ Screenshots
+
+Application screenshots are stored in the /screenshots folder.
+
+Welcome Screen
+
+Admin Dashboard
+
+Quiz Attempt Screen
+
+Leaderboard
+
+📄 Documentation
+🎯 Objectives
+
+Automate quiz creation and evaluation
+
+Reduce manual checking and result calculation
+
+Provide real-time feedback to students
+
+Demonstrate OOP concepts using Java
+
+📦 Scope
+
+Desktop-based Java application
+
+Admin and Student roles
+
+Local MySQL database
+
+⚠ Limitations
+
+Passwords are stored in plain text
+
+Desktop-only application
+
+No advanced authentication or encryption
+
+Limited scalability (lab-level project)
+
+🧾 Installation & Setup
+🔹 Prerequisites
+
+Java JDK 8 or higher
+
+MySQL Server
+
+IntelliJ IDEA / Eclipse
+
+Git
+
+🔹 Steps
+
+Clone Repository
+
+git clone https://github.com/Bilal-69-J/Quiz-Management-System.git
+
+
+Create Database
+
+Create a MySQL database
+
+Import the provided SQL file (Quix.sql)
+
+Configure Database
+Create db.properties in src/main/resources:
+
+db.url=jdbc:mysql://localhost:3306/quiz_db
+db.user=root
+db.password=your_password
+
+
+Run Application
+
+Run MainApp.java from your IDE
+
+🔄 Git & GitHub Usage
+
+This project uses Git & GitHub for version control.
+
+✔ Public GitHub repository
+✔ Frequent commits with meaningful messages
+✔ Separate contributions by team members
+✔ README with UML, screenshots, and documentation
+
+Commit examples:
+
+git commit -m "Add core model classes"
+git commit -m "Implement DAO layer using JDBC"
+git commit -m "Add JavaFX UI screens"
+git commit -m "Add UML diagrams and README documentation"
+
+🎤 Final Presentation (CSC241)
+
+During the final presentation, the following will be demonstrated:
+
+Project introduction and problem statement
+
+Object decomposition and UML diagrams
+
+OOP concepts used (Encapsulation, Aggregation, DAO pattern)
+
+Live demo of the application
+
+Challenges faced and lessons learned
+
+🔮 Future Enhancements
+
+Password hashing and encryption
+
+Web-based version using Spring Boot
+
+Export results to PDF/CSV
+
+Improved UI and error handling
+
+Role-based access control
+
+👨‍💻 Contributors
+
+Bilal-69-J — Project design, implementation, and documentation
+
+(Additional contributors can be added here if applicable)
+
+📄 License
+
+This project is developed for academic purposes as part of the
+CSC241 Object Oriented Programming Lab.
