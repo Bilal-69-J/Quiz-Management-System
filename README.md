@@ -122,15 +122,22 @@ All UML diagrams are available in the `/uml` directory.
 ![Sequence Diagram](uml/sequence-diagram.png)
 
 ---
+## 🖼 Screenshots
 
-## 🖼️ Screenshots
+### Welcome Screen
+![Welcome Screen](screenshots/welcome-screen.jpeg)
 
-Screenshots of the application are available in the `/screenshots` directory.
+### Admin Dashboard
+![Admin Dashboard](screenshots/dashboard.jpeg)
 
-- Welcome Screen  
-- Admin Dashboard  
-- Quiz Attempt Screen  
-- Leaderboard  
+### Student Dashboard
+![Student Dashboard](screenshots/student-dashboard.jpeg)
+
+### Quiz Attempt
+![Quiz Attempt](screenshots/quiz-attempt.jpeg)
+
+### Results / Leaderboard
+![Results](screenshots/results.jpeg)
 
 ---
 
@@ -165,9 +172,12 @@ Screenshots of the application are available in the `/screenshots` directory.
 
 1. Clone the repository:
 git clone https://github.com/Bilal-69-J/Quiz-Management-System.git
-2.Create a MySQL database and import the SQL file.
-3.Configure database credentials in db.properties.
-4.Run MainApp.java from your IDE.
+
+2. Create a MySQL database and import the SQL file.
+
+3. Configure database credentials in db.properties.
+
+4. Run MainApp.java from your IDE.
 
 ----
 
@@ -180,7 +190,11 @@ UML diagrams and documentation included
 
 ## 👨‍💻 Contributor
 
-Bilal-69-J
+Bilal — UI & lead developer
+
+Umar — Database design
+
+Maria — DAO & documentation
 
 ---
 
