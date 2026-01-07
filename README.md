@@ -153,7 +153,7 @@ Screenshots of the application are available in the `/screenshots` directory.
 
 ---
 
-## 🧾 Installation & Setup
+## 🧾 Installation & Setup 
 
 ### Prerequisites
 - Java JDK 8 or higher  
@@ -161,7 +161,7 @@ Screenshots of the application are available in the `/screenshots` directory.
 - IntelliJ IDEA or Eclipse  
 - Git  
 
-### Setup Steps
+### Setup Steps 
 
 1. Clone the repository:
 git clone https://github.com/Bilal-69-J/Quiz-Management-System.git
