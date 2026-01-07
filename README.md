@@ -49,3 +49,142 @@ This project demonstrates the practical application of **Object-Oriented Program
 
 ## 🗂️ Project Structure
 
+src/main/java/com/quiz
+
+├── MainApp.java
+
+├── AppNavigator.java
+
+│
+
+├── model
+
+│ ├── Admin.java
+
+│ ├── Participant.java
+
+│ ├── Quiz.java
+
+│ ├── Question.java
+
+│ ├── QuizAttempt.java
+
+│ └── AttemptAnswer.java
+
+│
+
+├── dao
+
+│ ├── DBConnection.java
+
+│ ├── AdminDAO.java
+
+│ ├── ParticipantDAO.java
+
+│ ├── QuizDAO.java
+
+│ ├── QuestionDAO.java
+
+│ └── QuizAttemptDAO.java
+
+│
+
+└── ui
+
+├── UIUtil.java
+
+├── WelcomeScreen.java
+
+├── LoginScreen.java
+
+├── StudentLoginScreen.java
+
+├── DashboardScreen.java
+
+├── StudentDashboard.java
+
+├── QuizAttemptScreen.java
+
+
+---
+
+## 📐 UML Diagrams
+
+All UML diagrams are available in the `/uml` directory.
+
+### Class Diagram
+![Class Diagram](uml/class-diagram.png)
+
+### Use Case Diagram
+![Use Case Diagram](uml/use-case-diagram.png)
+
+### Sequence Diagram
+![Sequence Diagram](uml/sequence-diagram.png)
+
+---
+
+## 🖼️ Screenshots
+
+Screenshots of the application are available in the `/screenshots` directory.
+
+- Welcome Screen  
+- Admin Dashboard  
+- Quiz Attempt Screen  
+- Leaderboard  
+
+---
+
+## 📄 Documentation
+
+### 🎯 Objectives
+- Automate quiz management and evaluation  
+- Reduce manual result calculation  
+- Demonstrate OOP principles in Java  
+
+### 📦 Scope
+- Desktop-based Java application  
+- Admin and Student roles  
+- MySQL database integration  
+
+### ⚠ Limitations
+- Passwords are stored in plain text  
+- Desktop-only application  
+- Limited scalability  
+
+---
+
+## 🧾 Installation & Setup
+
+### Prerequisites
+- Java JDK 8 or higher  
+- MySQL Server  
+- IntelliJ IDEA or Eclipse  
+- Git  
+
+### Setup Steps
+
+1. Clone the repository:
+git clone https://github.com/Bilal-69-J/Quiz-Management-System.git
+2.Create a MySQL database and import the SQL file.
+3.Configure database credentials in db.properties.
+4.Run MainApp.java from your IDE.
+
+---
+
+## 🔄 Git & GitHub Usage
+
+This project uses Git and GitHub for version control.
+Public GitHub repository
+Frequent commits with descriptive messages
+UML diagrams and documentation included
+
+## 👨‍💻 Contributor
+
+Bilal-69-J
+
+---
+
+## 📄 License
+This project is developed for academic purposes as part of the
+CSC241 Object Oriented Programming Lab.
+
