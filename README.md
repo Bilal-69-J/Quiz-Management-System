@@ -169,7 +169,7 @@ git clone https://github.com/Bilal-69-J/Quiz-Management-System.git
 3.Configure database credentials in db.properties.
 4.Run MainApp.java from your IDE.
 
----
+----
 
 ## 🔄 Git & GitHub Usage
 
