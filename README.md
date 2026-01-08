@@ -192,9 +192,9 @@ UML diagrams and documentation included
 
 Bilal — UI & lead developer
 
-Umar — Database design
+Umar — Database design & DAO
 
-Maria — DAO & documentation
+Maria — Model & documentation
 
 ---
 
