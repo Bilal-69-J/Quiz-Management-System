@@ -134,7 +134,7 @@ All UML diagrams are available in the `/uml` directory.
 ![Student Dashboard](screenshots/student-dashboard.jpeg)
 
 ### Quiz Attempt
-![Quiz Attempt](screenshots/quiz-attempt.jpeg)
+![Quiz Attempt](screenshots/quiz-attempt.png)
 
 ### Results / Leaderboard
 ![Results](screenshots/results.jpeg)
